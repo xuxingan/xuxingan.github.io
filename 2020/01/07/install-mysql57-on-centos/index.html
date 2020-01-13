@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="mysql centos linux," />
+  <meta name="keywords" content="linux,mysql,centos," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="CentOS安装Mysql5.7.28下载1wget https:&#x2F;&#x2F;cdn.mysql.com&#x2F;&#x2F;Downloads&#x2F;MySQL-5.7&#x2F;mysql-5.7.28-linux-glibc2.12-x86_64.tar.gz  用root用户登录系统，增加mysql用户和组，数据库安装在此用户下12groupadd mysqluseradd -r -g mysql -s &#x2F;bin&#x2F;false my">
+<meta name="description" content="下载1wget https:&#x2F;&#x2F;cdn.mysql.com&#x2F;&#x2F;Downloads&#x2F;MySQL-5.7&#x2F;mysql-5.7.28-linux-glibc2.12-x86_64.tar.gz  用root用户登录系统，增加mysql用户和组，数据库安装在此用户下12groupadd mysqluseradd -r -g mysql -s &#x2F;bin&#x2F;false mysql  准备数据目录123mkdir">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CentOS安装Mysql5.7.28">
 <meta property="og:url" content="https://xuxingan.github.io/2020/01/07/install-mysql57-on-centos/index.html">
 <meta property="og:site_name" content="Alex Hsu">
-<meta property="og:description" content="CentOS安装Mysql5.7.28下载1wget https:&#x2F;&#x2F;cdn.mysql.com&#x2F;&#x2F;Downloads&#x2F;MySQL-5.7&#x2F;mysql-5.7.28-linux-glibc2.12-x86_64.tar.gz  用root用户登录系统，增加mysql用户和组，数据库安装在此用户下12groupadd mysqluseradd -r -g mysql -s &#x2F;bin&#x2F;false my">
+<meta property="og:description" content="下载1wget https:&#x2F;&#x2F;cdn.mysql.com&#x2F;&#x2F;Downloads&#x2F;MySQL-5.7&#x2F;mysql-5.7.28-linux-glibc2.12-x86_64.tar.gz  用root用户登录系统，增加mysql用户和组，数据库安装在此用户下12groupadd mysqluseradd -r -g mysql -s &#x2F;bin&#x2F;false mysql  准备数据目录123mkdir">
 <meta property="article:published_time" content="2020-01-07T02:53:13.000Z">
-<meta property="article:modified_time" content="2020-01-08T03:01:00.352Z">
+<meta property="article:modified_time" content="2020-01-12T06:58:58.000Z">
 <meta property="article:author" content="Alex Hsu">
-<meta property="article:tag" content="mysql centos linux">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="mysql">
+<meta property="article:tag" content="centos">
 <meta name="twitter:card" content="summary">
 
 
@@ -275,6 +277,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/01/07/install-mysql57-on-centos/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/01/07/install-mysql57-on-centos/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -299,7 +311,7 @@
       
 
       
-        <h1 id="CentOS安装Mysql5-7-28"><a href="#CentOS安装Mysql5-7-28" class="headerlink" title="CentOS安装Mysql5.7.28"></a>CentOS安装Mysql5.7.28</h1><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.28-linux-glibc2.12-x86_64.tar.gz</span><br></pre></td></tr></table></figure>
+        <h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.28-linux-glibc2.12-x86_64.tar.gz</span><br></pre></td></tr></table></figure>
 
 <h2 id="用root用户登录系统，增加mysql用户和组，数据库安装在此用户下"><a href="#用root用户登录系统，增加mysql用户和组，数据库安装在此用户下" class="headerlink" title="用root用户登录系统，增加mysql用户和组，数据库安装在此用户下"></a>用root用户登录系统，增加mysql用户和组，数据库安装在此用户下</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">groupadd mysql</span><br><span class="line">useradd -r -g mysql -s /bin/false mysql</span><br></pre></td></tr></table></figure>
 
@@ -352,7 +364,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/mysql-centos-linux/" rel="tag"># mysql centos linux</a>
+            <a href="/tags/linux/" rel="tag"># linux</a>
+          
+            <a href="/tags/mysql/" rel="tag"># mysql</a>
+          
+            <a href="/tags/centos/" rel="tag"># centos</a>
           
         </div>
       
@@ -365,15 +381,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/01/06/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/01/12/install-manjaro-i3-on-virtualbox/" rel="prev" title="VirtualBox安装Manjaro i3">
+                VirtualBox安装Manjaro i3 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -402,6 +418,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -450,7 +469,7 @@
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -463,7 +482,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -512,7 +531,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CentOS安装Mysql5-7-28"><span class="nav-number">1.</span> <span class="nav-text">CentOS安装Mysql5.7.28</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载"><span class="nav-number">1.1.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用root用户登录系统，增加mysql用户和组，数据库安装在此用户下"><span class="nav-number">1.2.</span> <span class="nav-text">用root用户登录系统，增加mysql用户和组，数据库安装在此用户下</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备数据目录"><span class="nav-number">1.3.</span> <span class="nav-text">准备数据目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备二进制文件"><span class="nav-number">1.4.</span> <span class="nav-text">准备二进制文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化MySQL"><span class="nav-number">1.5.</span> <span class="nav-text">初始化MySQL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编辑配置文件"><span class="nav-number">1.6.</span> <span class="nav-text">编辑配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动MySQL"><span class="nav-number">1.7.</span> <span class="nav-text">启动MySQL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置环境变量"><span class="nav-number">1.8.</span> <span class="nav-text">配置环境变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置开机启动"><span class="nav-number">1.9.</span> <span class="nav-text">设置开机启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试登录"><span class="nav-number">1.10.</span> <span class="nav-text">测试登录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看当前数据库的字符情况"><span class="nav-number">1.11.</span> <span class="nav-text">查看当前数据库的字符情况</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载"><span class="nav-number">1.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用root用户登录系统，增加mysql用户和组，数据库安装在此用户下"><span class="nav-number">2.</span> <span class="nav-text">用root用户登录系统，增加mysql用户和组，数据库安装在此用户下</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备数据目录"><span class="nav-number">3.</span> <span class="nav-text">准备数据目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备二进制文件"><span class="nav-number">4.</span> <span class="nav-text">准备二进制文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化MySQL"><span class="nav-number">5.</span> <span class="nav-text">初始化MySQL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编辑配置文件"><span class="nav-number">6.</span> <span class="nav-text">编辑配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动MySQL"><span class="nav-number">7.</span> <span class="nav-text">启动MySQL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置环境变量"><span class="nav-number">8.</span> <span class="nav-text">配置环境变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置开机启动"><span class="nav-number">9.</span> <span class="nav-text">设置开机启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试登录"><span class="nav-number">10.</span> <span class="nav-text">测试登录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看当前数据库的字符情况"><span class="nav-number">11.</span> <span class="nav-text">查看当前数据库的字符情况</span></a></li></ol></div>
             
 
           </div>
@@ -700,6 +719,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'OPWk5mdRS0fCxzEhVuGo7KLE-gzGzoHsz',
+        appKey: 'na4Wo2eOfwCx0vaumeRLYmJw',
+        placeholder: 'Say something',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

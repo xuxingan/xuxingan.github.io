@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="linux,virtualbox,manjaro," />
 
 
 
@@ -79,12 +79,22 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Alex Hsu">
-<meta property="og:url" content="https://xuxingan.github.io/index.html">
+<meta name="description" content="下载1https:&#x2F;&#x2F;manjaro.org&#x2F;download&#x2F;#i3   安装Manjaro参考：Manjaro-User-Guide.pdf 配置国内源1sudo pacman-mirrors -i -c China -m rank  在弹出窗口选择几个速度比较快的源 修改&#x2F;etc&#x2F;pacman.conf，在最后追加： 12[archlinuxcn]Server &#x3D; https:&#x2F;&#x2F;mirro">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VirtualBox安装Manjaro i3">
+<meta property="og:url" content="https://xuxingan.github.io/2020/01/12/install-manjaro-i3-on-virtualbox/index.html">
 <meta property="og:site_name" content="Alex Hsu">
+<meta property="og:description" content="下载1https:&#x2F;&#x2F;manjaro.org&#x2F;download&#x2F;#i3   安装Manjaro参考：Manjaro-User-Guide.pdf 配置国内源1sudo pacman-mirrors -i -c China -m rank  在弹出窗口选择几个速度比较快的源 修改&#x2F;etc&#x2F;pacman.conf，在最后追加： 12[archlinuxcn]Server &#x3D; https:&#x2F;&#x2F;mirro">
+<meta property="og:image" content="https://alexhsu-blog-pics.oss-cn-beijing.aliyuncs.com/img/20200112193745.png">
+<meta property="og:image" content="https://alexhsu-blog-pics.oss-cn-beijing.aliyuncs.com/img/20200112193833.png">
+<meta property="article:published_time" content="2020-01-12T07:01:13.000Z">
+<meta property="article:modified_time" content="2020-01-13T01:14:53.496Z">
 <meta property="article:author" content="Alex Hsu">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="virtualbox">
+<meta property="article:tag" content="manjaro">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://alexhsu-blog-pics.oss-cn-beijing.aliyuncs.com/img/20200112193745.png">
 
 
 
@@ -114,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="https://xuxingan.github.io/"/>
+  <link rel="canonical" href="https://xuxingan.github.io/2020/01/12/install-manjaro-i3-on-virtualbox/"/>
 
 
 
 
 
-  <title>Alex Hsu</title>
+  <title>VirtualBox安装Manjaro i3 | Alex Hsu</title>
   
 
 
@@ -139,8 +149,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -213,148 +222,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://xuxingan.github.io/2020/01/13/install_common_software_on_manjaro/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Alex Hsu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Alex Hsu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/01/13/install_common_software_on_manjaro/" itemprop="url">install_common_software_on_manjaro</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-13T08:56:48+08:00">
-                2020-01-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2020/01/13/install_common_software_on_manjaro/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/01/13/install_common_software_on_manjaro/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="安装fish"><a href="#安装fish" class="headerlink" title="安装fish"></a>安装fish</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S fish</span><br></pre></td></tr></table></figure>
-
-<h2 id="更改shell"><a href="#更改shell" class="headerlink" title="更改shell"></a>更改shell</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">which</span> fish</span><br><span class="line">chsh -s /usr/bin/fish</span><br></pre></td></tr></table></figure>
-
-<h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -L https://get.oh-my-fish | fish</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="配置fish"><a href="#配置fish" class="headerlink" title="配置fish"></a>配置fish</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fish_config</span><br></pre></td></tr></table></figure>
-
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -384,9 +254,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/01/12/install-manjaro-i3-on-virtualbox/" itemprop="url">VirtualBox安装Manjaro i3</a></h1>
+          <h1 class="post-title" itemprop="name headline">VirtualBox安装Manjaro i3</h1>
         
 
         <div class="post-meta">
@@ -446,9 +314,7 @@
       
 
       
-        
-          
-            <h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://manjaro.org/download/<span class="comment">#i3</span></span><br></pre></td></tr></table></figure>
+        <h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://manjaro.org/download/<span class="comment">#i3</span></span><br></pre></td></tr></table></figure>
 
 <p><img src="https://alexhsu-blog-pics.oss-cn-beijing.aliyuncs.com/img/20200112193745.png" alt=""></p>
 <h1 id="安装Manjaro"><a href="#安装Manjaro" class="headerlink" title="安装Manjaro"></a>安装Manjaro</h1><p>参考：<a href="https://mirrors.xtom.com.hk/osdn//storage/g/m/ma/manjaro/Manjaro-User-Guide.pdf" target="_blank" rel="noopener">Manjaro-User-Guide.pdf</a></p>
@@ -577,8 +443,6 @@
 </tr>
 </tbody></table>
 
-          
-        
       
     </div>
     
@@ -593,179 +457,44 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://xuxingan.github.io/2020/01/07/install-mysql57-on-centos/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Alex Hsu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Alex Hsu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/01/07/install-mysql57-on-centos/" itemprop="url">CentOS安装Mysql5.7.28</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-07T10:53:13+08:00">
-                2020-01-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/linux/" rel="tag"># linux</a>
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2020/01/07/install-mysql57-on-centos/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/01/07/install-mysql57-on-centos/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
+            <a href="/tags/virtualbox/" rel="tag"># virtualbox</a>
           
-
+            <a href="/tags/manjaro/" rel="tag"># manjaro</a>
           
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.28-linux-glibc2.12-x86_64.tar.gz</span><br></pre></td></tr></table></figure>
-
-<h2 id="用root用户登录系统，增加mysql用户和组，数据库安装在此用户下"><a href="#用root用户登录系统，增加mysql用户和组，数据库安装在此用户下" class="headerlink" title="用root用户登录系统，增加mysql用户和组，数据库安装在此用户下"></a>用root用户登录系统，增加mysql用户和组，数据库安装在此用户下</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">groupadd mysql</span><br><span class="line">useradd -r -g mysql -s /bin/false mysql</span><br></pre></td></tr></table></figure>
-
-<h2 id="准备数据目录"><a href="#准备数据目录" class="headerlink" title="准备数据目录"></a>准备数据目录</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /app/data</span><br><span class="line">chown mysql.mysql /app/data/</span><br><span class="line">chmod 750 /app/data</span><br></pre></td></tr></table></figure>
-
-<h2 id="准备二进制文件"><a href="#准备二进制文件" class="headerlink" title="准备二进制文件"></a>准备二进制文件</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tar xvf mysql-5.7.28-linux-glibc2.12-x86_64.tar.gz -C /usr/local/</span><br><span class="line">cd /usr/local</span><br><span class="line">ln -sv mysql-5.7.28-linux-glibc2.12-x86_64 mysql 'mysql' -&gt; 'mysql-5.7.28-linux-glibc2.12-x86_64'</span><br></pre></td></tr></table></figure>
-
-<h2 id="初始化MySQL"><a href="#初始化MySQL" class="headerlink" title="初始化MySQL"></a>初始化MySQL</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;usr&#x2F;local&#x2F;mysql</span><br><span class="line">bin&#x2F;mysqld --initialize --user&#x3D;mysql --basedir&#x3D;&#x2F;usr&#x2F;local&#x2F;mysql --datadir&#x3D;&#x2F;app&#x2F;data</span><br></pre></td></tr></table></figure>
-
-<p>其中–basedir mysql基础目录 –datadir mysql数据存放目录，并创建了root用户的临时密码</p>
-<h2 id="编辑配置文件"><a href="#编辑配置文件" class="headerlink" title="编辑配置文件"></a>编辑配置文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim &#x2F;etc&#x2F;my.cnf</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">[mysqld]</span><br><span class="line"><span class="meta">#</span><span class="bash"> GENERAL</span></span><br><span class="line">datadir=/app/data</span><br><span class="line">socket=/app/data/mysql.sock</span><br><span class="line">user=mysql</span><br><span class="line">default-storage-engine=InnoDB</span><br><span class="line">character-set-server=utf8</span><br><span class="line">[mysqld_safe]</span><br><span class="line">log-error=/app/data/mysql-error.log</span><br><span class="line">pid-file=/app/data/mysqld.pid</span><br><span class="line"></span><br><span class="line">[client]</span><br><span class="line">socket=/app/data/mysql.sock</span><br></pre></td></tr></table></figure>
-
-<h2 id="启动MySQL"><a href="#启动MySQL" class="headerlink" title="启动MySQL"></a>启动MySQL</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bin&#x2F;mysqld_safe --user&#x3D;mysql &amp;</span><br></pre></td></tr></table></figure>
-
-<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim &#x2F;etc&#x2F;profile</span><br></pre></td></tr></table></figure>
-
-<p>下面添加一行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH&#x3D;$PATH:&#x2F;usr&#x2F;local&#x2F;mysql&#x2F;bin</span><br></pre></td></tr></table></figure>
-
-<p>使环境变量生效</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source &#x2F;etc&#x2F;profile</span><br></pre></td></tr></table></figure>
-
-<h2 id="设置开机启动"><a href="#设置开机启动" class="headerlink" title="设置开机启动"></a>设置开机启动</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp support-files&#x2F;mysql.server &#x2F;etc&#x2F;init.d&#x2F;mysql.server</span><br><span class="line">chkconfig --add mysql.server</span><br></pre></td></tr></table></figure>
-
-<h2 id="测试登录"><a href="#测试登录" class="headerlink" title="测试登录"></a>测试登录</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot -p</span><br></pre></td></tr></table></figure>
-
-<p>建数据库将数据库的编码改成utf-8</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create database mydb default character set utf8 collate utf8_general_ci;</span><br></pre></td></tr></table></figure>
-
-<h2 id="查看当前数据库的字符情况"><a href="#查看当前数据库的字符情况" class="headerlink" title="查看当前数据库的字符情况"></a>查看当前数据库的字符情况</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHOW VARIABLES LIKE &#39;char%&#39;;</span><br></pre></td></tr></table></figure>
-
-
-
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/01/07/install-mysql57-on-centos/" rel="next" title="CentOS安装Mysql5.7.28">
+                <i class="fa fa-chevron-left"></i> CentOS安装Mysql5.7.28
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/01/13/install_common_software_on_manjaro/" rel="prev" title="install_common_software_on_manjaro">
+                install_common_software_on_manjaro <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -775,10 +504,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -786,6 +516,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -806,8 +543,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -874,6 +620,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#下载"><span class="nav-number">1.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装Manjaro"><span class="nav-number">2.</span> <span class="nav-text">安装Manjaro</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置国内源"><span class="nav-number">3.</span> <span class="nav-text">配置国内源</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装VirtualBox增强功能"><span class="nav-number">4.</span> <span class="nav-text">安装VirtualBox增强功能</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#把kernel版本降到4-19"><span class="nav-number">4.1.</span> <span class="nav-text">把kernel版本降到4.19</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#虚拟机选择“设备”→“安装增强功能”"><span class="nav-number">4.2.</span> <span class="nav-text">虚拟机选择“设备”→“安装增强功能”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#挂载VBoxGuestAdditions-iso-镜像"><span class="nav-number">4.3.</span> <span class="nav-text">挂载VBoxGuestAdditions.iso 镜像</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#挂载镜像"><span class="nav-number">4.3.1.</span> <span class="nav-text">挂载镜像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装增强功能"><span class="nav-number">4.3.2.</span> <span class="nav-text">安装增强功能</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置分辨率"><span class="nav-number">5.</span> <span class="nav-text">设置分辨率</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#删除台式机的No-battery和lan-10-0-2-15-1000-Mbit-s"><span class="nav-number">6.</span> <span class="nav-text">删除台式机的No battery和lan:10.0.2.15 1000 Mbit&#x2F;s</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#附录：i3常用快捷键"><span class="nav-number">7.</span> <span class="nav-text">附录：i3常用快捷键</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1014,6 +776,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
