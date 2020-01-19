@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="linux,virtualbox,manjaro," />
+  <meta name="keywords" content="linux,manjaro,virtualbox," />
 
 
 
@@ -88,11 +88,11 @@
 <meta property="og:image" content="https://alexhsu-blog-pics.oss-cn-beijing.aliyuncs.com/img/20200112193745.png">
 <meta property="og:image" content="https://alexhsu-blog-pics.oss-cn-beijing.aliyuncs.com/img/20200112193833.png">
 <meta property="article:published_time" content="2020-01-12T07:01:13.000Z">
-<meta property="article:modified_time" content="2020-01-13T01:14:53.496Z">
+<meta property="article:modified_time" content="2020-01-19T00:50:03.278Z">
 <meta property="article:author" content="Alex Hsu">
 <meta property="article:tag" content="linux">
-<meta property="article:tag" content="virtualbox">
 <meta property="article:tag" content="manjaro">
+<meta property="article:tag" content="virtualbox">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://alexhsu-blog-pics.oss-cn-beijing.aliyuncs.com/img/20200112193745.png">
 
@@ -314,24 +314,24 @@
       
 
       
-        <h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://manjaro.org/download/<span class="comment">#i3</span></span><br></pre></td></tr></table></figure>
+        <h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://manjaro.org/download/<span class="comment">#i3</span></span><br></pre></td></tr></table></figure>
 
 <p><img src="https://alexhsu-blog-pics.oss-cn-beijing.aliyuncs.com/img/20200112193745.png" alt=""></p>
-<h1 id="安装Manjaro"><a href="#安装Manjaro" class="headerlink" title="安装Manjaro"></a>安装Manjaro</h1><p>参考：<a href="https://mirrors.xtom.com.hk/osdn//storage/g/m/ma/manjaro/Manjaro-User-Guide.pdf" target="_blank" rel="noopener">Manjaro-User-Guide.pdf</a></p>
-<h1 id="配置国内源"><a href="#配置国内源" class="headerlink" title="配置国内源"></a>配置国内源</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman-mirrors -i -c China -m rank</span><br></pre></td></tr></table></figure>
+<h2 id="安装Manjaro"><a href="#安装Manjaro" class="headerlink" title="安装Manjaro"></a>安装Manjaro</h2><p>参考：<a href="https://mirrors.xtom.com.hk/osdn//storage/g/m/ma/manjaro/Manjaro-User-Guide.pdf" target="_blank" rel="noopener">Manjaro-User-Guide.pdf</a></p>
+<h2 id="配置国内源"><a href="#配置国内源" class="headerlink" title="配置国内源"></a>配置国内源</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman-mirrors -i -c China -m rank</span><br></pre></td></tr></table></figure>
 
 <p>在弹出窗口选择几个速度比较快的源</p>
 <p>修改<code>/etc/pacman.conf</code>，在最后追加：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[archlinuxcn]</span><br><span class="line">Server = https://mirrors.ustc.edu.cn/archlinuxcn/<span class="variable">$arch</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[archlinuxcn]</span><br><span class="line">Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/<span class="variable">$arch</span></span><br></pre></td></tr></table></figure>
 
-<p>这里使用的是中科大的源，<a href="http://mirrors.ustc.edu.cn/help/archlinuxcn.html" target="_blank" rel="noopener">详细帮助信息参见</a></p>
+<p>这里使用的是清华大学的源，<a href="https://mirrors.tuna.tsinghua.edu.cn/help/archlinuxcn/" target="_blank" rel="noopener">详细帮助信息参见</a></p>
 <p>安装archlinuxcn-keyring</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -Syy</span><br><span class="line">sudo pacman -S archlinuxcn-keyring</span><br></pre></td></tr></table></figure>
 
 <p>更新一下</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -Syyu</span><br></pre></td></tr></table></figure>
 
-<h1 id="安装VirtualBox增强功能"><a href="#安装VirtualBox增强功能" class="headerlink" title="安装VirtualBox增强功能"></a>安装VirtualBox增强功能</h1><h2 id="把kernel版本降到4-19"><a href="#把kernel版本降到4-19" class="headerlink" title="把kernel版本降到4.19"></a>把kernel版本降到4.19</h2><p>在最新的manjaro kernel（版本5.6.4-2）下，VirtualBox（版本6.0.14）并没有提供支持，所以内核要降到4.19才装的上增强功能。（暂时没有找到更好的办法）</p>
+<h2 id="安装VirtualBox增强功能"><a href="#安装VirtualBox增强功能" class="headerlink" title="安装VirtualBox增强功能"></a>安装VirtualBox增强功能</h2><h3 id="把kernel版本降到4-19"><a href="#把kernel版本降到4-19" class="headerlink" title="把kernel版本降到4.19"></a>把kernel版本降到4.19</h3><p>在最新的manjaro kernel（版本5.6.4-2）下，VirtualBox（版本6.0.14）并没有提供支持，所以内核要降到4.19才装的上增强功能。（暂时没有找到更好的办法）</p>
 <p>查看并更换内核参考<a href="https://wiki.manjaro.org/index.php/Manjaro_Kernels" target="_blank" rel="noopener">官方wiki</a></p>
 <p>查看当前内核版本</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mhwd-kernel -li</span><br></pre></td></tr></table></figure>
@@ -343,22 +343,25 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S linux419-headers</span><br></pre></td></tr></table></figure>
 
 <p>重启</p>
-<h2 id="虚拟机选择“设备”→“安装增强功能”"><a href="#虚拟机选择“设备”→“安装增强功能”" class="headerlink" title="虚拟机选择“设备”→“安装增强功能”"></a>虚拟机选择“设备”→“安装增强功能”</h2><p><img src="https://alexhsu-blog-pics.oss-cn-beijing.aliyuncs.com/img/20200112193833.png" alt=""></p>
-<h2 id="挂载VBoxGuestAdditions-iso-镜像"><a href="#挂载VBoxGuestAdditions-iso-镜像" class="headerlink" title="挂载VBoxGuestAdditions.iso 镜像"></a>挂载VBoxGuestAdditions.iso 镜像</h2><h3 id="挂载镜像"><a href="#挂载镜像" class="headerlink" title="挂载镜像"></a>挂载镜像</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mount /dev/cdrom /mnt</span><br></pre></td></tr></table></figure>
+<p>虚拟机选择“设备”→“安装增强功能”</p>
+<p><img src="https://alexhsu-blog-pics.oss-cn-beijing.aliyuncs.com/img/20200112193833.png" alt=""></p>
+<h3 id="挂载VBoxGuestAdditions-iso-镜像"><a href="#挂载VBoxGuestAdditions-iso-镜像" class="headerlink" title="挂载VBoxGuestAdditions.iso 镜像"></a>挂载VBoxGuestAdditions.iso 镜像</h3><p>挂载镜像</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mount /dev/cdrom /mnt</span><br></pre></td></tr></table></figure>
 
-<h3 id="安装增强功能"><a href="#安装增强功能" class="headerlink" title="安装增强功能"></a>安装增强功能</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /mnt</span><br><span class="line">sudo ./VBoxLinuxAdditions.run</span><br></pre></td></tr></table></figure>
+<p>安装增强功能</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /mnt</span><br><span class="line">sudo ./VBoxLinuxAdditions.run</span><br></pre></td></tr></table></figure>
 
 <p>重启之后就可以开启剪切板等功能了</p>
-<h1 id="设置分辨率"><a href="#设置分辨率" class="headerlink" title="设置分辨率"></a>设置分辨率</h1><p>编辑~/.profile文件，在最后追加以下内容</p>
+<h2 id="设置分辨率"><a href="#设置分辨率" class="headerlink" title="设置分辨率"></a>设置分辨率</h2><p>编辑~/.profile文件，在最后追加以下内容</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cvt 1920 1080</span><br><span class="line">xrandr --newmode <span class="string">"1920x1080_60.00"</span> 173.00 1920 2048 2248 2576 10801083 1088 1120 -hsync +vsync</span><br><span class="line">xrandr --addmode Virtual1 <span class="string">"1920x1080_60.00"</span> </span><br><span class="line">xrandr --output Virtual --mode <span class="string">"1920x1080_60.00"</span></span><br></pre></td></tr></table></figure>
 
 <p>这里1920 1080是我显示器支持的分辨率，通过xrandr命令可以查看目前操作系统支持的分辨率，如果直接有你系统的分辨率就直接用<code>xrandr -s 1024x768</code> 设置就可以了。</p>
 <p><code>Virtual1</code>是我的显示设备，同样可以通过xrandr命令可以查看到。</p>
-<h1 id="删除台式机的No-battery和lan-10-0-2-15-1000-Mbit-s"><a href="#删除台式机的No-battery和lan-10-0-2-15-1000-Mbit-s" class="headerlink" title="删除台式机的No battery和lan:10.0.2.15 1000 Mbit/s"></a>删除台式机的<code>No battery</code>和<code>lan:10.0.2.15 1000 Mbit/s</code></h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/i3status.conf</span><br></pre></td></tr></table></figure>
+<h2 id="删除台式机的No-battery和lan-10-0-2-15-1000-Mbit-s"><a href="#删除台式机的No-battery和lan-10-0-2-15-1000-Mbit-s" class="headerlink" title="删除台式机的No battery和lan:10.0.2.15 1000 Mbit/s"></a>删除台式机的<code>No battery</code>和<code>lan:10.0.2.15 1000 Mbit/s</code></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/i3status.conf</span><br></pre></td></tr></table></figure>
 
 <p>将#order += “ethernet <em>first</em>“和order += “battery all”注释掉</p>
 <p>用super+shift+r重载i3查看效果</p>
-<h1 id="附录：i3常用快捷键"><a href="#附录：i3常用快捷键" class="headerlink" title="附录：i3常用快捷键"></a>附录：i3常用快捷键</h1><table>
+<h2 id="附录：i3常用快捷键"><a href="#附录：i3常用快捷键" class="headerlink" title="附录：i3常用快捷键"></a>附录：i3常用快捷键</h2><table>
 <thead>
 <tr>
 <th>键位</th>
@@ -461,9 +464,9 @@
           
             <a href="/tags/linux/" rel="tag"># linux</a>
           
-            <a href="/tags/virtualbox/" rel="tag"># virtualbox</a>
-          
             <a href="/tags/manjaro/" rel="tag"># manjaro</a>
+          
+            <a href="/tags/virtualbox/" rel="tag"># virtualbox</a>
           
         </div>
       
@@ -486,8 +489,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/01/13/install_common_software_on_manjaro/" rel="prev" title="install_common_software_on_manjaro">
-                install_common_software_on_manjaro <i class="fa fa-chevron-right"></i>
+              <a href="/2020/01/13/install_common_software_on_manjaro/" rel="prev" title="Manjaro安装常用软件">
+                Manjaro安装常用软件 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -630,7 +633,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#下载"><span class="nav-number">1.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装Manjaro"><span class="nav-number">2.</span> <span class="nav-text">安装Manjaro</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置国内源"><span class="nav-number">3.</span> <span class="nav-text">配置国内源</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装VirtualBox增强功能"><span class="nav-number">4.</span> <span class="nav-text">安装VirtualBox增强功能</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#把kernel版本降到4-19"><span class="nav-number">4.1.</span> <span class="nav-text">把kernel版本降到4.19</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#虚拟机选择“设备”→“安装增强功能”"><span class="nav-number">4.2.</span> <span class="nav-text">虚拟机选择“设备”→“安装增强功能”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#挂载VBoxGuestAdditions-iso-镜像"><span class="nav-number">4.3.</span> <span class="nav-text">挂载VBoxGuestAdditions.iso 镜像</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#挂载镜像"><span class="nav-number">4.3.1.</span> <span class="nav-text">挂载镜像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装增强功能"><span class="nav-number">4.3.2.</span> <span class="nav-text">安装增强功能</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置分辨率"><span class="nav-number">5.</span> <span class="nav-text">设置分辨率</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#删除台式机的No-battery和lan-10-0-2-15-1000-Mbit-s"><span class="nav-number">6.</span> <span class="nav-text">删除台式机的No battery和lan:10.0.2.15 1000 Mbit&#x2F;s</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#附录：i3常用快捷键"><span class="nav-number">7.</span> <span class="nav-text">附录：i3常用快捷键</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载"><span class="nav-number">1.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Manjaro"><span class="nav-number">2.</span> <span class="nav-text">安装Manjaro</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置国内源"><span class="nav-number">3.</span> <span class="nav-text">配置国内源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装VirtualBox增强功能"><span class="nav-number">4.</span> <span class="nav-text">安装VirtualBox增强功能</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#把kernel版本降到4-19"><span class="nav-number">4.1.</span> <span class="nav-text">把kernel版本降到4.19</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#挂载VBoxGuestAdditions-iso-镜像"><span class="nav-number">4.2.</span> <span class="nav-text">挂载VBoxGuestAdditions.iso 镜像</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置分辨率"><span class="nav-number">5.</span> <span class="nav-text">设置分辨率</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除台式机的No-battery和lan-10-0-2-15-1000-Mbit-s"><span class="nav-number">6.</span> <span class="nav-text">删除台式机的No battery和lan:10.0.2.15 1000 Mbit&#x2F;s</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附录：i3常用快捷键"><span class="nav-number">7.</span> <span class="nav-text">附录：i3常用快捷键</span></a></li></ol></div>
             
 
           </div>
